@@ -97,3 +97,7 @@ Within a few seconds a **Port Scan** alert should appear in the Alerts tab. You 
 ## Legal and ethical use
 
 Only capture traffic on networks you own or are explicitly authorised to monitor. Capturing other people's traffic without permission is illegal.
+
+## Use it for learning
+
+NetSentinel is open source under the MIT License. Students are welcome to study it, run it in their own lab and extend it as a learning or college project. If you reuse it, please read `docs/BUTTON_FLOW.md` first so you can explain how every part works, and give credit by linking back to this repository.
