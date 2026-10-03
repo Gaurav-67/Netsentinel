@@ -8,6 +8,18 @@ NetSentinel captures live network traffic, breaks it into packets and conversati
 
 ---
 
+## Screenshots
+
+**Live packet capture** - numbered packets, protocol filters, search, and a layer-by-layer packet view
+
+![Live packet capture](docs/screenshots/packets.png)
+
+**Security Operations Dashboard** - KPIs, traffic rate, protocol mix, top talkers, top services and alerts by severity
+
+![Security dashboard](docs/screenshots/dashboard.png)
+
+---
+
 ## Features (v0.2)
 
 | Area | What it does |
