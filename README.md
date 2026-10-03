@@ -34,21 +34,7 @@ Each detection can be switched ON or OFF from the Alerts tab. Alerts are rate-li
 
 ## Architecture
 
-```mermaid
-flowchart LR
-    A["Network traffic"] --> B["Npcap driver"]
-    B --> C["Scapy sniffer thread"]
-    C --> D["Parser: packet to simple record"]
-    D --> E["Queue"]
-    E --> F["GUI timer: batches of 500 packets every 100 ms"]
-    F --> G["Packet table"]
-    F --> H["Flow tracker"]
-    F --> I["Detection engine"]
-    F --> J["Dashboard counters"]
-    I --> K["Alerts tab"]
-    H --> L["Flows tab"]
-    J --> M["Dashboard tab"]
-```
+![NetSentinel architecture](docs/architecture.svg)
 
 Capture runs in a background thread and the interface pulls packets in small batches, so the window stays smooth even on heavy traffic such as video streaming.
 
